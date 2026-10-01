@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#120d12">
+<title>For Vaibhu ♡</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#0d0a0d;color:#fff;font-family:Georgia,"Times New Roman",serif}
+body{min-height:100vh;overflow-x:hidden}
+button{font:inherit}
+.page{max-width:620px;margin:auto;padding:22px 18px 60px;position:relative}
+.glow{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(90px);opacity:.18;pointer-events:none}
+.g1{background:#ff719f;top:-70px;left:-80px}.g2{background:#b98cff;right:-100px;top:35%;}.g3{background:#ffb36b;bottom:-100px;left:30%}
+.screen{display:none;min-height:calc(100vh - 70px);align-items:center;justify-content:center;text-align:center;position:relative;z-index:1}
+.screen.active{display:flex;animation:fade .65s ease}
+.inner{width:100%}
+.kicker{letter-spacing:.18em;text-transform:uppercase;font:12px Arial,sans-serif;opacity:.65}
+h1{font-size:clamp(38px,12vw,72px);line-height:.95;margin:14px 0}
+h2{font-size:clamp(28px,8vw,44px);margin:10px 0 16px}
+p{font-size:17px;line-height:1.75;opacity:.86}
+.script{font-style:italic}
+.heart{font-size:74px;animation:beat 1.3s infinite}
+.btn{border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:14px 22px;min-height:50px;margin-top:18px;cursor:pointer;backdrop-filter:blur(10px)}
+.btn:active{transform:scale(.97)}
+.small{font:12px Arial,sans-serif;opacity:.55;margin-top:15px}
+.photo{width:100%;height:min(68vh,620px);object-fit:cover;border-radius:28px;box-shadow:0 20px 70px rgba(0,0,0,.45);margin:18px 0}
+.caption{font-size:15px;opacity:.72}
+.card{background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:22px;text-align:left}
+.card p{margin:0}
+.reason{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.reason:last-child{border:0}
+.counter{font:13px Arial,sans-serif;opacity:.55;margin-bottom:12px}
+.letter{text-align:left;background:rgba(255,255,255,.055);border-radius:25px;padding:25px;border:1px solid rgba(255,255,255,.1)}
+.letter p{margin:0 0 15px}
+.final{font-size:18px;line-height:1.8}
+.signature{font-size:25px;margin-top:20px;font-style:italic}
+.music{position:fixed;right:15px;bottom:15px;z-index:10;border:1px solid rgba(255,255,255,.18);background:rgba(20,15,20,.82);color:white;border-radius:999px;padding:10px 14px;font:12px Arial,sans-serif;display:none}
+.music.show{display:block}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.piece{position:absolute;top:-20px;width:7px;height:12px;animation:fall 3.2s linear forwards}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes beat{50%{transform:scale(1.09)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+
+<main class="page">
+
+<section class="screen active" data-screen="0">
+  <div class="inner">
+    <div class="kicker">a tiny surprise by Dellu</div>
+    <div class="heart">♡</div>
+    <h1>For<br>Vaibhu.</h1>
+    <p class="script">I made you something.<br>Don't rush it. Open every little thing. ♡</p>
+    <button class="btn next">tap to enter →</button>
+    <div class="small">21 • 07 • 2026</div>
+  </div>
+</section>
+
+<section class="screen" data-screen="1">
+  <div class="inner">
+    <div class="kicker">chapter one</div>
+    <h2>It started with us.</h2>
+    <p>21st July 2026.<br>A date that quietly became one of my favourite dates.</p>
+    <div class="card">
+      <p class="script">“Somehow, you became my person before I even realised how much you meant to me.”</p>
+    </div>
+    <button class="btn next">our little memories →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="2">
+  <div class="inner">
+    <div class="kicker">memory 01</div>
+    <img class="photo" src="photos/photo1.jpg" alt="A memory of us">
+    <p class="caption">The silly version of us. The one I never want to lose.</p>
+    <button class="btn next">next memory →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="3">
+  <div class="inner">
+    <div class="kicker">memory 02</div>
+    <img class="photo" src="photos/photo2.jpg" alt="A memory of us">
+    <p class="caption">Even when everything looks a little unreal, this feeling is very real.</p>
+    <button class="btn next">next memory →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="4">
+  <div class="inner">
+    <div class="kicker">memory 03</div>
+    <img class="photo" src="photos/photo3.jpg" alt="A memory of us">
+    <p class="caption">My favourite kind of ordinary: just being next to you.</p>
+    <button class="btn next">keep going →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="5">
+  <div class="inner">
+    <div class="kicker">memory 04</div>
+    <img class="photo" src="photos/photo4.jpg" alt="A memory of us">
+    <p class="caption">Proof that we can be romantic, dramatic and ridiculous at the same time.</p>
+    <button class="btn next">next →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="6">
+  <div class="inner">
+    <div class="kicker">memory 05</div>
+    <img class="photo" src="photos/photo5.jpg" alt="A memory of us">
+    <p class="caption">This one feels like a little secret between us.</p>
+    <button class="btn next">next →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="7">
+  <div class="inner">
+    <div class="kicker">memory 06</div>
+    <img class="photo" src="photos/photo6.jpg" alt="A memory of us">
+    <p class="caption">One more picture I wanted to keep here forever.</p>
+    <button class="btn next">next →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="8">
+  <div class="inner">
+    <div class="kicker">memory 07</div>
+    <img class="photo" src="photos/photo7.jpg" alt="A memory of us">
+    <p class="caption">Some pictures don't need a caption. They just feel like home.</p>
+    <button class="btn next">one last photo →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="9">
+  <div class="inner">
+    <div class="kicker">memory 08</div>
+    <img class="photo" src="photos/photo8.jpg" alt="A memory of us">
+    <p class="caption">And this is where I stop pretending I don't miss you a little too much.</p>
+    <button class="btn next">things I love about you →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="10">
+  <div class="inner">
+    <div class="kicker">chapter two</div>
+    <h2>Things I love about you.</h2>
+    <div class="card">
+      <div class="reason"><b>01</b><br>The way you make me feel safe enough to be completely myself.</div>
+      <div class="reason"><b>02</b><br>Your little habits that somehow became my favourite things.</div>
+      <div class="reason"><b>03</b><br>The way even an ordinary moment becomes special when you're there.</div>
+      <div class="reason"><b>04</b><br>Your soft side — the one I know exists underneath everything.</div>
+      <div class="reason"><b>05</b><br>And honestly… I just love having <i>you</i> to love.</div>
+    </div>
+    <button class="btn next">there's more →</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="11">
+  <div class="inner">
+    <div class="kicker">chapter three</div>
+    <h2>A little letter.</h2>
+    <div class="letter">
+      <p>Vaibhu,</p>
+      <p>I don't think I say everything I feel in the right words, so I made you this instead.</p>
+      <p>Since 21st July, you've become such a beautiful part of my life. There are moments with you that I wish I could pause and keep forever — even the stupid, random ones.</p>
+      <p>I hope you always know that behind all my teasing, overthinking and nonsense, there is a Dellu who genuinely cares about you more than she knows how to explain.</p>
+      <p>Thank you for being you. Thank you for the memories we already have, and for all the ones we haven't made yet.</p>
+      <p>And if I had to choose one place to be again and again, I'd still choose next to you.</p>
+      <div class="signature">— your Dellu ♡</div>
+    </div>
+    <button class="btn next">one final thing…</button>
+  </div>
+</section>
+
+<section class="screen" data-screen="12">
+  <div class="inner">
+    <div class="kicker">the last page</div>
+    <div class="heart">♥</div>
+    <h2>Happy Boyfriend's Day, Vaibhu.</h2>
+    <p class="final">I hope when you look at this later, you smile and remember that somewhere, right now, there's a girl who is very, very happy that it's <i>you</i>.</p>
+    <p class="script">Tujhko jo paaya… toh jeena aaya. ♡</p>
+    <div class="signature">Forever your Dellu.</div>
+    <button class="btn" id="replay">replay from the beginning ↺</button>
+  </div>
+</section>
+
+</main>
+
+<button class="music" id="musicBtn">♪ add song</button>
+<audio id="song" preload="none" loop></audio>
+<input id="songFile" type="file" accept="audio/*" hidden>
+
+<script>
+const screens=[...document.querySelectorAll(".screen")];
+let current=0;
+function show(n){
+  current=(n+screens.length)%screens.length;
+  screens.forEach((s,i)=>s.classList.toggle("active",i===current));
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll(".next").forEach(b=>b.addEventListener("click",()=>show(current+1)));
+document.getElementById("replay").addEventListener("click",()=>show(0));
+
+const song=document.getElementById("song"), musicBtn=document.getElementById("musicBtn"), file=document.getElementById("songFile");
+musicBtn.classList.add("show");
+musicBtn.addEventListener("click",()=>file.click());
+file.addEventListener("change",()=>{
+  const f=file.files[0]; if(!f)return;
+  song.src=URL.createObjectURL(f);
+  song.play().then(()=>musicBtn.textContent="♫ playing").catch(()=>musicBtn.textContent="♫ tap to play");
+});
+
+let launched=false;
+document.querySelector(".screen[data-screen='0'] .next").addEventListener("click",()=>{
+  if(launched)return; launched=true;
+  const c=document.createElement("div"); c.className="confetti"; document.body.appendChild(c);
+  for(let i=0;i<42;i++){
+    const p=document.createElement("i"); p.className="piece";
+    p.style.left=(Math.random()*100)+"%";
+    p.style.animationDelay=(Math.random()*.7)+"s";
+    p.style.background=["#fff","#ff9dbb","#d7b7ff","#ffd28a"][i%4];
+    c.appendChild(p);
+  }
+  setTimeout(()=>c.remove(),4000);
+});
+</script>
+</body>
+</html>
